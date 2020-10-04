@@ -1,5 +1,5 @@
 db/*.db
 db/*.log
-.irpg.conf
+irpg.conf
 .irpg.pid
 .dbbackup/*
