@@ -7,6 +7,33 @@ Thanks for your interest in the Idle RPG! Feel free to contact me with ideas and
 comments, or post them in the forum on the website for public view.
 
 --------------------------------------------------------------------------------
+  v3.1.2+johm+chschu: released -/-/04
+--------------------------------------------------------------------------------
+  - setup !idle@IRCnet [johm]
+  - added ipv6 support [johm]
+  - added auto-login (after netsplit, ping timeout ...) if you haven't
+    changed your nick!user@host [johm]
+     * made auto-login optional [johm]
+  - fixed lvl60+ penalty bug [johm]
+  - fixed possible $rpreport timer bug [johm+chschu]
+  - team battles are now fought out around random points on the map [chschu]
+  - added wars of northern half against southern half of the map [chschu]
+     * made wars quadrant-based [chschu]
+  - dropped items stay on the map, lose 1 level every 30 minutes and are
+    found if somebody enters the same spot [chschu]
+     * changed downgrading time to 1 day, limited downgrading of uniques [chschu]
+     * only drop items of level > 0, downgrade uniques to non-uniques
+       below their minimum level [chschu]
+     * downgrading now depends on item level (higher => slower) [chschu]
+  - added reload of quest on startup [chschu]
+  - fixed bug with int() applied on non-numeric strings (item levels) [chschu]
+  - fixed config bug on empty value [chschu]
+  - fixed warning on undefined username in ha() [chschu]
+  - fixed bug breaking userhost on nick change [chschu]
+  - fixed voice on login bug (less nicks than flags) [chschu]
+
+
+--------------------------------------------------------------------------------
   v3.1.2: released 6/6/04
 --------------------------------------------------------------------------------
   - applied a user-submitted patch to fix a sprintf() bug (anonymous @ forum)
